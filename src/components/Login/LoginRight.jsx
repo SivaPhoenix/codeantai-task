@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { KeyIcon } from "@heroicons/react/16/solid";
+import { Link } from "react-router-dom"; // Import Link for routing
 
 // Import image assets
 import logo from "../../assets/logo.svg";
@@ -47,51 +48,51 @@ const LoginRight = () => {
           <div className="flex items-center justify-center w-full">
             {isSaas ? (
               <div className="flex items-center flex-col justify-center w-full gap-2 max-w-[400px]">
-                <a
-                  href="/dashboard"
+                <Link
+                  to="/dashboard" // Use Link instead of a
                   className="border items-center flex w-full gap-3 p-2 rounded-lg justify-center"
                 >
                   <img src={github} alt="github" className="w-5" />
                   Sign in with Github
-                </a>
-                <a
-                  href="/dashboard"
+                </Link>
+                <Link
+                  to="/dashboard" // Use Link instead of a
                   className="border items-center flex w-full gap-3 p-2 rounded-lg justify-center"
                 >
                   <img src={bitbucket} alt="bitbucket" className="w-5" />
                   Sign in with Bitbucket
-                </a>
-                <a
-                  href="/dashboard"
+                </Link>
+                <Link
+                  to="/dashboard" // Use Link instead of a
                   className="border items-center flex w-full gap-3 p-2 rounded-lg justify-center"
                 >
                   <img src={azureDevops} alt="azure-devops" className="w-5" />
                   Sign in with Azure DevOps
-                </a>
-                <a
-                  href="/dashboard"
+                </Link>
+                <Link
+                  to="/dashboard" // Use Link instead of a
                   className="border items-center flex w-full gap-3 p-2 rounded-lg justify-center"
                 >
                   <img src={gitlab} alt="gitlab" className="w-5" />
                   Sign in with GitLab
-                </a>
+                </Link>
               </div>
             ) : (
               <div className="flex items-center flex-col justify-center w-full gap-2 max-w-[400px]">
-                <a
-                  href="/dashboard"
+                <Link
+                  to="/dashboard" // Use Link instead of a
                   className="border items-center flex w-full gap-3 p-2 rounded-lg justify-center"
                 >
                   <img src={gitlab} alt="gitlab" className="w-5" />
                   Sign in with GitLab
-                </a>
-                <a
-                  href="/dashboard"
+                </Link>
+                <Link
+                  to="/dashboard" // Use Link instead of a
                   className="border items-center flex w-full gap-3 p-2 rounded-lg justify-center"
                 >
                   <KeyIcon className="w-5" />
                   Sign in with SSO
-                </a>
+                </Link>
               </div>
             )}
           </div>

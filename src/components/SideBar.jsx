@@ -119,7 +119,7 @@ import {
                 <span className="ml-3 font-light">Support</span>
               </a>
               <a
-                href="/"
+                href="#"
                 className="flex items-center px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100"
               >
                 <ArrowRightOnRectangleIcon className="w-5" />
