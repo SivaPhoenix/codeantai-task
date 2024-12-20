@@ -75,7 +75,7 @@ import {
             <nav className="flex-1 px-4 py-2 space-y-2">
               <a
                 href="#"
-                className="flex items-center px-4 py-2 text-sm font-medium bg-[#1570EF] text-white rounded-lg"
+                className="flex items-center px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100"
               >
                 <HomeIcon className="w-6" />
                 <span className="ml-3 font-light">Repositories</span>
